@@ -12,7 +12,15 @@ export default function Home() {
 								<img src="" alt="" className="w-full" />
 							</div>
 							<h1 className="relative w-fit tracking-tight text-balance mt-16 font-bold !leading-tight text-gray-50 text-5xl md:text-6xl lg:text-7xl">
-								Your
+								Get all your Documents{" "}
+								<span className="bg-primary-pink px-2 text-slate-900">
+									Printed
+								</span>{" "}
+								and{" "}
+								<span className="bg-[#fedfa6] px-2 text-slate-900">
+									{" "}
+									Delivered
+								</span>
 							</h1>
 						</div>
 					</div>
