@@ -40,11 +40,11 @@ export default function Home() {
 									<span className="text-light-blue">
 										VIT hostelites
 									</span>{" "}
-									and {""}
+									and from day scholars located within a{" "}
 									<span className="text-light-blue">
-										10 Km radius
+										10 km radius
 									</span>{" "}
-									encompassing it.
+									of VIT.
 								</span>
 							</p>
 							<ul className="mt-8 space-y-2 text-left font-medium flex flex-col items-center sm:items-start">
