@@ -1,8 +1,10 @@
-import Image from "next/image";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { Check } from "lucide-react";
 import { Star } from "lucide-react";
-import CardComponent from "@/components/CardComponent";
+import { Grid2X2 } from "lucide-react";
+import { Columns2 } from "lucide-react";
+import { StickyNote } from "lucide-react";
+import { Stick } from "next/font/google";
 
 export default function Home() {
 	return (
@@ -126,14 +128,42 @@ export default function Home() {
 							</div>
 						</div>
 					</div>
-
-					<div className="col-span-full lg:col-span-1 w-full flex justify-center px-8 sm:px-16 md:px-0 mt-32 lg:mx-0 lg:mt-20 h-fit">
-						<div className="relative md:max-w-xl">
-							<div className="flex space-x-12 bg-black">
-								<CardComponent layout="2x2" />
-								<CardComponent layout="1x2" />
-								<CardComponent layout="1x1" />
+					{/* -------------------------------- Image div ------------------------------- */}
+					<div className="col-span-full lg:col-span-1 w-full flex justify-center px-8 sm:px-16 md:px-0 mt-24 lg:mx-0 lg:mt-12 h-fit">
+						<div className=" md:max-w-xl">
+							<div className="pointer-events-none overflow-hidden xl:w-[32rem] mb-0">
+								<img
+									src="/printer2.png"
+									alt=""
+									className="pointer-events-none select-none"
+								/>
 							</div>
+							<div className="flex space-x-6 bg-black mt-8 xl:mt-0 justify-center">
+								<p className="  text-light-blue">
+									<Grid2X2
+										className="text-light-pink w-24 h-24"
+										strokeWidth={0.5}
+									/>
+									4 pages in 1
+								</p>
+								<p className=" text-light-blue">
+									<Columns2
+										className="text-light-yellow w-24 h-24"
+										strokeWidth={0.5}
+									/>
+									2 Pages in 1
+								</p>
+								<p className="text-light-blue">
+									<StickyNote
+										className="text-light-green w-24 h-24"
+										strokeWidth={0.5}
+									/>
+									Single Page
+								</p>
+							</div>
+							<p className="text-gray-400 flex justify-center mt-6 text-lg">
+								Three basic layouts to choose from!!
+							</p>
 						</div>
 					</div>
 				</MaxWidthWrapper>
