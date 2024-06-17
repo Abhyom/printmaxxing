@@ -22,7 +22,7 @@ export default function Home() {
 							</div>
 							<h1 className="relative w-fit tracking-tight text-balance mt-0 font-bold !leading-tight text-gray-50 text-5xl md:text-6xl lg:text-7xl">
 								Get all your Documents{" "}
-								<span className="bg-light-pink px-2 text-slate-900">
+								<span className="bg-light-purple px-2 text-slate-900">
 									Printed
 								</span>{" "}
 								and{" "}
@@ -161,7 +161,7 @@ export default function Home() {
 									Single Page
 								</p>
 							</div>
-							<p className="text-gray-400 flex justify-center mt-6 text-lg">
+							<p className="text-light-purple flex justify-center mt-6 text-lg">
 								Three basic layouts to choose from!!
 							</p>
 						</div>
