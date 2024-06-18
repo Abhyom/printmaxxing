@@ -122,7 +122,7 @@ export default function Home() {
 										<span className="font-semibold">
 											1.2k
 										</span>{" "}
-										happy customers
+										Happy customers
 									</p>
 								</div>
 							</div>
