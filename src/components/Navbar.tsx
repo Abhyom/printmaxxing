@@ -3,10 +3,10 @@ import MaxWidthWrapper from "./MaxWidthWrapper";
 import { buttonVariants } from "./ui/button";
 import { ArrowRight } from "lucide-react";
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
-const Navbar = () => {
+const Navbar = async () => {
 	const { getUser } = getKindeServerSession();
-	const user = undefined;
-	const isAdmin = false;
+	const user = await getUser();
+	const isAdmin = user?.email === process.env.ADMIN_EMAIL;
 	return (
 		<nav className="sticky z-[100] h-14 inset-x-0 top-0 w-full border-b border-gray-800 bg-black/75 backdrop-blur-lg transition-all">
 			<MaxWidthWrapper>
@@ -45,7 +45,7 @@ const Navbar = () => {
 									className={buttonVariants({
 										size: "sm",
 										className:
-											"hidden sm:flex items-center gap-1",
+											"hidden sm:flex items-center gap-1 text-black font-semibold",
 									})}
 								>
 									Upload Documents
